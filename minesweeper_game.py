@@ -315,7 +315,7 @@ class PlayMinesweeper():
         if self.game_lost:
             tagged_disp = 'RIP'
         else:
-            tagged_disp = 'GG'
+            tagged_disp = 'YAY'
         tagged_text = self.tagged_font.render(tagged_disp, True, self.red_colour)
         tagged_text_rec = tagged_text.get_rect(center=(self.start_x + 40, 35))
         self.screen.blit(tagged_text, tagged_text_rec)
